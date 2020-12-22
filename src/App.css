@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica neue';
   }
+
+li {
+  list-style-type: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav {
+  display: flex;
+  justify-content: space-around;
+  min-height: 10vh;
+  align-items: center;
+  background-color: rgb(119, 114, 114);
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav .logo {
+  font-size: 18px;
+  font-weight: 500;
 }
+
+nav .nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+}
+
+nav .nav-links a {
+  font-size: 18px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+nav .nav-links a:hover {
+  border-bottom: 1px solid white;
+}
+
+nav .show-more {
+  font-size: 18px;
+  display: none;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  width: 150px;
+  position: absolute;
+  top: 68px;
+}
+
+.dropdown-menu li {
+  background: rgb(119, 114, 114);
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background: rgb(116, 112, 112);
+}
+
+.dropdown-menu.clicked {
+  display: none;
+}
+
+.dropdown-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+
+nav li img {
+  height: 25px;
+  margin-bottom: -7px;
+  cursor: pointer;
+}
+
+.show-more-button {
+  display: flex;
+  flex-direction: row;
+  display: none;
+}
+
+@media all and (max-width: 768px) {
+  nav .show-more {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    top: 0px;
+  }
+
+  nav .nav-links {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 110vh;
+    background: rgb(119, 114, 114);
+    width: 50%;
+    padding: 15px;
+    transform: translateX(-500px);
+    transition: 0.5s ease-in-out;
+  }
+
+  nav .nav-links li {
+    padding: 15px;
+    border-bottom: 1px solid white;
+  }
+
+  nav .nav-links li:last-of-type {
+    padding: 15px;
+    border-bottom: 0px solid white;
+  }
+
+  nav .nav-links a:hover {
+    border-bottom: 0px solid white;
+  }
+  
+}
+
+  
