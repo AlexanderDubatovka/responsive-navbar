@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import DropMenu from '../molecules/DropMenu'
+import DropMenuMedium from './DropMenuMedium'
 import ArrowDownNavbar from '../../components/assets/img/arrow_down_navbar.png'
 import HamburgerMenu from '../../components/assets/img/hamburger-menu.png'
 
@@ -11,9 +12,7 @@ function NavbarMedium() {
 
     return (
         <>
-            <li 
-                onClick={ () => setDrop(!drop) }
-            >
+            <li onClick={ () => setDrop(!drop) }>
                 <Link to='/'>Components</Link>
                 <img src={ArrowDownNavbar} alt='arrow down navbar' />
                 { drop && <DropMenu /> }
@@ -25,7 +24,7 @@ function NavbarMedium() {
                 <Link to='/' style={{borderBottom: '0px solid white'}}>
                     <img src={HamburgerMenu} alt='hamburger menu navbar' /> Show more
                 </Link>
-                { drop2 ? <DropMenu />: null }
+                { drop2 && <DropMenuMedium /> }
             </li>
         </>
     )

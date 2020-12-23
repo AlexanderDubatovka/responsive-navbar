@@ -31,7 +31,7 @@ function NavbarLarge() {
             <li onClick={ () => setDrop2(!drop2)}>
                 <Link to='/'>Components 6</Link>
                 <img src={ArrowDownNavbar} alt='arrow down navbar' />
-                { drop2 ? <DropMenu />: null }
+                { drop2 ? <DropMenu /> : null }
             </li>
         </>
     )

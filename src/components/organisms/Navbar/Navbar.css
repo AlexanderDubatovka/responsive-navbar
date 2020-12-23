@@ -39,7 +39,7 @@ nav .show-more {
 }
 
 .dropdown-menu {
-  width: 150px;
+  width: 120px;
   position: absolute;
   top: 68px;
 }
@@ -50,6 +50,25 @@ nav .show-more {
 }
 
 .dropdown-menu li:hover {
+  background: rgb(100, 98, 98);
+}
+
+.dropdown-menu.clicked {
+  display: none;
+}
+
+.dropdown-menu-medium {
+  width: 135px;
+  position: absolute;
+  top: 68px;
+}
+
+.dropdown-menu-medium li {
+  background: rgb(119, 114, 114);
+  cursor: pointer;
+}
+
+.dropdown-menu-medium li:hover {
   background: rgb(100, 98, 98);
 }
 

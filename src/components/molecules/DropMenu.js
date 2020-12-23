@@ -5,23 +5,21 @@ import { DropMenuItems } from '../atoms/DropMenuItems'
 function DropMenu() {
 
     return (
-            <ul className='dropdown-menu'>
+        <ul className='dropdown-menu'>
             { DropMenuItems.map((item, index) => {
                 return (
-                    <li 
-                        key={index}
-                    >
-                    <Link
-                        className={item.cName}
-                        to={item.path}
-                    >
-                        {item.title}
-                    </Link>
+                    <li key={index}>
+                        <Link
+                            className={item.cName}
+                            to={item.path}
+                        >
+                            {item.title}
+                        </Link>
                     </li>
                 )
                 })  
             }
-            </ul>
+        </ul>
     )
 }
 
