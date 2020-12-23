@@ -3,11 +3,14 @@ import { Link } from 'react-router-dom'
 import { DropMenuItems } from '../atoms/DropMenuItems'
 
 function DropMenu() {
+
     return (
-        <div className='dropdown-menu'>
+            <ul className='dropdown-menu'>
             { DropMenuItems.map((item, index) => {
                 return (
-                    <li key={index}>
+                    <li 
+                        key={index}
+                    >
                     <Link
                         className={item.cName}
                         to={item.path}
@@ -18,7 +21,7 @@ function DropMenu() {
                 )
                 })  
             }
-        </div>
+            </ul>
     )
 }
 
