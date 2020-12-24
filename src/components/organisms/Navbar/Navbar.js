@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import ShowMenuButton from "../../atoms/ShowMenuButton";
-import NavbarLarge from "../../molecules/NavbarLarge";
-import NavbarMedium from "../../molecules/NavbarMedium";
-import "./Navbar.css";
-import "../../../App.css";
+import React, { useState } from 'react';
+import ShowMenuButton from '../../atoms/ShowMenuButton';
+import NavbarLarge from '../../molecules/NavbarLarge';
+import NavbarMedium from '../../molecules/NavbarMedium';
+import './Navbar.css';
+import '../../../App.css';
 
 function Navbar() {
   const [show, setShow] = useState(false);
@@ -14,7 +14,7 @@ function Navbar() {
         <div className="logo"> Visual language </div>
         <ul
           className="nav-links"
-          style={{ transform: show ? "translateX(0px)" : "" }}
+          style={{ transform: show ? 'translateX(0px)' : '' }}
         >
           {window.innerWidth > 1024 ? (
             <NavbarLarge />

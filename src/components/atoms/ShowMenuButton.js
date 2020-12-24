@@ -1,5 +1,5 @@
-import React from "react";
-import HamburgerMenu from "../../components/assets/img/hamburger-menu.png";
+import React from 'react';
+import HamburgerMenu from '../../components/assets/img/hamburger-menu.png';
 
 function ShowMenuButton() {
   return (
