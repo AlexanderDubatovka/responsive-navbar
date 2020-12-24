@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import DropMenu from "../molecules/DropMenu";
-import { NavbarSimpleItems } from "../atoms/NavbarSimpleItems";
-import ArrowDownNavbar from "../../components/assets/img/arrow_down_navbar.png";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import DropMenu from '../molecules/DropMenu';
+import { NavbarSimpleItems } from '../atoms/NavbarSimpleItems';
+import ArrowDownNavbar from '../../components/assets/img/arrow_down_navbar.png';
 
 function NavbarLarge() {
   const [drop, setDrop] = useState(false);
