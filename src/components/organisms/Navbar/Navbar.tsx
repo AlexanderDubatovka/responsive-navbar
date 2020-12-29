@@ -5,8 +5,8 @@ import NavbarMedium from '../../molecules/NavbarMedium';
 import './Navbar.css';
 import '../../../App.css';
 
-function Navbar() {
-  const [show, setShow] = useState(false);
+const Navbar: React.FC = () => {
+  const [show, setShow] = useState<boolean>(false);
 
   return (
     <>
@@ -30,6 +30,6 @@ function Navbar() {
       </nav>
     </>
   );
-}
+};
 
 export default Navbar;

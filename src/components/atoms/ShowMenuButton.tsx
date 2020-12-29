@@ -1,7 +1,7 @@
 import React from 'react';
 import HamburgerMenu from '../../components/assets/img/hamburger-menu.png';
 
-function ShowMenuButton() {
+const ShowMenuButton: React.FC = () => {
   return (
     <div>
       <span className="show-more">
@@ -9,6 +9,6 @@ function ShowMenuButton() {
       </span>
     </div>
   );
-}
+};
 
 export default ShowMenuButton;

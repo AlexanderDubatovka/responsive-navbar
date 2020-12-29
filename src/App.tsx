@@ -1,7 +1,8 @@
 import React from 'react';
 import Navbar from './components/organisms/Navbar/Navbar';
 import { BrowserRouter as Router } from 'react-router-dom';
-function App() {
+
+const App: React.FC = () => {
   return (
     <>
       <Router>
@@ -9,5 +10,6 @@ function App() {
       </Router>
     </>
   );
-}
+};
+
 export default App;
