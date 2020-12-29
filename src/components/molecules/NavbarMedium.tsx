@@ -5,9 +5,9 @@ import DropMenuMedium from './DropMenuMedium';
 import ArrowDownNavbar from '../../components/assets/img/arrow_down_navbar.png';
 import HamburgerMenu from '../../components/assets/img/hamburger-menu.png';
 
-function NavbarMedium() {
-  const [drop, setDrop] = useState(false);
-  const [drop2, setDrop2] = useState(false);
+const NavbarMedium: React.FC = () => {
+  const [drop, setDrop] = useState<boolean>(false);
+  const [drop2, setDrop2] = useState<boolean>(false);
 
   return (
     <>
@@ -31,6 +31,6 @@ function NavbarMedium() {
       </li>
     </>
   );
-}
+};
 
 export default NavbarMedium;
